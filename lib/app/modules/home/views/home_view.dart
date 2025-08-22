@@ -68,6 +68,16 @@ class HomeView extends GetView<HomeController> {
                   color: Colors.purple,
                   onTap: () => Get.toNamed("/penjualan"),
                 ),
+                const SizedBox(height: 20),
+
+                // ✅ Post Menu
+                _menuCard(
+                  title: "Post Page",
+                  subtitle: "Lihat daftar postingan",
+                  icon: Icons.article,
+                  color: Colors.blueAccent,
+                  onTap: () => Get.toNamed("/post"),
+                ),
               ],
             ),
           ),
